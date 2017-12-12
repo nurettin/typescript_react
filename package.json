@@ -2,15 +2,18 @@
   "name": "typescript_react",
   "version": "1.0.0",
   "description": "typescript react hello",
-  "main": "index.js",
+  "main": "typescript_react.js",
   "scripts": {
     "build": "webpack",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "debug": "ruby -run -ehttpd . -p8080",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npm-watch"
   },
   "keywords": [],
-  "author": "",
+  "author": "Nurettin Onur TUĞCU <onur.tugcu@gmail.com>",
   "license": "ISC",
   "devDependencies": {
+    "npm-watch": "^0.3.0",
     "ts-loader": "^3.2.0",
     "typescript": "^2.6.2",
     "typings": "^2.1.1",
@@ -19,5 +22,11 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0"
+  },
+  "watch": {
+    "build": {
+      "patterns": ["src"],
+      "extensions": "js,ts,jsx,tsx"
+    }
   }
 }

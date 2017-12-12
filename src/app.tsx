@@ -5,7 +5,7 @@ import * as ReactDOM from "react-dom";
 import Hello from "./Hello";
 
 ReactDOM.render(
-  <Hello name="Nurettin" />,
+  <Hello name="Nurettin Onur TUĞCU" />,
   document.getElementById("root")
 );
 
